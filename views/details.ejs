@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student details for Student - <%= student.name %></h1>
+   <p>Name: <%= student.email %></p>
+   <p>GPA: <%= student.gpa %></p>
+
+   <% if(student.isPG === true) {%>
+    <p>This student is post graduate student</p>
+    <% } else { %>
+        <p>This student is enrolled in diploma or degree</p>
+        <% } %>
+        
+</body>
+</html>

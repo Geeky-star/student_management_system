@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        border: 2px solid black;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>EJS Demo Session - <%=username%></h1>
+    <p>Age is <%=age%></p>
+    <p>GPA is: <%=gpa%></p>
+    </div>
+    <h2>Conditionals Demo</h2>
+
+    <% if(gpa>1.8) {%>
+       <p>You passed this course</p>
+        <%} else{ %>
+          <p>Try again</p>
+        <% } %>
+
+        <h2>Loops Demo</h2>
+
+        <% for(let currItem of testScores) {%>
+            <p>Test Score: <%=currItem%></p>
+            <% } %>
+
+</body>
+</html>
